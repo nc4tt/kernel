@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nc4tt · kernel</title>
+    <title>ncqtt · kernel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -421,7 +421,7 @@
 <div class="layout">
 
     <header id="site-header">
-        <span class="wordmark">nc4tt<span>/kernel</span></span>
+        <span class="wordmark">ncqtt<span>/kernel</span></span>
     </header>
 
     <section class="hero" id="hero">
@@ -439,8 +439,8 @@
     </main>
 
     <footer id="site-footer">
-        <span>nc4tt · kernel releases</span>
-        <a href="https://github.com/nc4tt/kernel" target="_blank" rel="noopener">
+        <span>ncqtt · kernel releases</span>
+        <a href="https://github.com/ncqtt/kernel" target="_blank" rel="noopener">
             github
             <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
@@ -505,7 +505,7 @@
     async function fetchReleases() {
         const container = document.getElementById('releases-container');
         try {
-            const res = await fetch('https://api.github.com/repos/nc4tt/kernel/releases');
+            const res = await fetch('https://api.github.com/repos/ncqtt/kernel/releases');
             if (!res.ok) throw new Error();
             const data = await res.json();
             data.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
